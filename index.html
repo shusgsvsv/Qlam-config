@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Tool UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .status {
+      margin-bottom: 10px;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="status">
+      <p><strong>• Trạng thái:</strong> Online</p>
+      <p><strong>Thời gian:</strong> <span id="time">00:00:00</span></p>
+    </div>
+    <ul class="feature-list">
+      <li><input type="checkbox"> | Antiband Novebom |</li>
+      <li><input type="checkbox"> | Giảm Thiểu Rung Tâm |</li>
+      <li><input type="checkbox"> | Fix Lag Máy |</li>
+      <li><input type="checkbox"> | Buff Fps Game |</li>
+      <li><input type="checkbox"> | Aimlock Gamer 85% |</li>
+      <li><input type="checkbox"> | Nhẹ Tâm V1 |</li>
+      <li><input type="checkbox"> | Hesot V2 Antiband |</li>
+      <li><input type="checkbox"> | Aim Head Max |</li>
+      <li><input type="checkbox"> | Dipi Nhảy |</li>
+      <li><input type="checkbox"> | Skill Aim |</li>
+      <li><input type="checkbox"> | Head Lock Mods |</li>
+      <li><input type="checkbox"> | Player Head |</li>
+    </ul>
+    <div class="footer">Make file by qlamios</div>
+  </div>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString('vi-VN');
+      document.getElementById('time').textContent = timeString;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+</body>
+</html>
